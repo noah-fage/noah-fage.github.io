@@ -97,6 +97,27 @@ blockquote {
 
 hr { border: none; border-top: 1px solid var(--border); margin: 2rem 0; }
 
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin: 1.4rem 0;
+}
+
+/* syntax highlighting (Rouge) - deliberately not green, to stay distinct from links */
+.highlight .c, .highlight .cm, .highlight .c1, .highlight .cs { color: #6a737d; font-style: italic; } /* comments */
+.highlight .k, .highlight .kd, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kt { color: #ff7b72; } /* keywords */
+.highlight .s, .highlight .s1, .highlight .s2, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .se, .highlight .sh, .highlight .si, .highlight .sx, .highlight .sr, .highlight .ss { color: #a5d6ff; } /* strings */
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #79c0ff; } /* numbers */
+.highlight .n, .highlight .nb, .highlight .nc, .highlight .no, .highlight .nd, .highlight .ni, .highlight .ne, .highlight .nf, .highlight .nl, .highlight .nn, .highlight .nx, .highlight .py, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi { color: #d4d4d4; } /* names */
+.highlight .nt { color: #ffa657; } /* HTML/XML tags */
+.highlight .na { color: #79c0ff; } /* attributes */
+.highlight .o, .highlight .ow, .highlight .p { color: #d4d4d4; } /* operators, punctuation */
+.highlight .err { color: #ff7b72; }
+.highlight .gd { color: #ff7b72; }
+.highlight .gi { color: #7ee787; }
+
 footer {
   border-top: 1px solid var(--border);
   padding: 1.4rem 0 2.5rem;

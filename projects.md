@@ -13,6 +13,8 @@ mapped to MITRE ATT&CK, and exports ATT&CK Navigator layers. I validated it in
 an isolated lab against live Atomic Red Team attack simulations across four
 techniques.
 
+![sigil flagging an LSASS credential-dumping attempt in the lab, tagged to ATT&CK T1003.001, next to a running Atomic Red Team test](/assets/img/sigil-lsass-detection.png)
+
 Next: a CI pipeline that replays recorded telemetry and checks every rule still
 fires on each commit, a wider ruleset, and Linux coverage alongside Windows.
 

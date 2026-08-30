@@ -9,6 +9,10 @@ markdown: kramdown
 permalink: /writing/:title/
 timezone: America/New_York
 
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
 exclude:
   - README.md
   - .gitignore
