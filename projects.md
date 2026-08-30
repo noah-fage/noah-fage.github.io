@@ -13,6 +13,9 @@ mapped to MITRE ATT&CK, and exports ATT&CK Navigator layers. I validated it in
 an isolated lab against live Atomic Red Team attack simulations across four
 techniques.
 
+Next: a CI pipeline that replays recorded telemetry and checks every rule still
+fires on each commit, a wider ruleset, and Linux coverage alongside Windows.
+
 [github.com/noah-fage/sigil](https://github.com/noah-fage/sigil)
 
 ## Sentinel

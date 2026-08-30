@@ -2,14 +2,17 @@
 layout: default
 ---
 
-CS student at McGill. I'm into detection engineering, home labs, and writing
-about what I learn. Still figuring out most of it.
+CS student at McGill, focused on detection engineering. I build tooling that
+catches attacker behavior in system logs, test it against real attack
+simulations in a home lab, and dig into how detection holds up at scale. My main
+project, [sigil](/projects/), is a real-time detection engine I built from
+scratch and validated against live attacks. I write here about what I learn
+building it.
 
-Outside of that: weightlifting, playing keys in
-[Blue Moon Brothers](https://open.spotify.com/search/Blue%20Moon%20Brothers),
-and reading more security writeups than I can keep up with.
+Outside of that: weightlifting and playing keys in
+[Blue Moon Brothers](https://open.spotify.com/search/Blue%20Moon%20Brothers).
 
-<!-- swap the Spotify link for the direct artist URL once you have it. change the third interest to whatever's real. -->
+<!-- swap the Spotify search link for the direct artist URL once you have it. add a third interest here if you want one. -->
 
 Recent writing:
 
