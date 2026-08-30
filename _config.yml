@@ -1,0 +1,14 @@
+title: Noah Fage
+description: "CS student at McGill. Detection engineering, home labs, and writing about what breaks."
+url: "https://noah-fage.github.io"
+author: Noah Fage
+linkedin: noah-fage-139885209
+github: noah-fage
+
+markdown: kramdown
+permalink: /writing/:title/
+timezone: America/New_York
+
+exclude:
+  - README.md
+  - .gitignore
