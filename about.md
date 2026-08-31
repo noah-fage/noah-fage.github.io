@@ -18,4 +18,5 @@ the parts that surprised me.
 **Projects:** [sigil](/projects/) (real-time Sigma detection engine) and
 [Sentinel](/projects/) (SOC analytics dashboard).
 
-I'm on [LinkedIn](https://www.linkedin.com/in/noah-fage-139885209).
+My [resume](/assets/Noah_Fage_Resume.pdf) is here. I'm also on
+[LinkedIn](https://www.linkedin.com/in/noah-fage-139885209).
