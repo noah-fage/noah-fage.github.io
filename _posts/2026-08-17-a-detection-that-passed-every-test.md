@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A detection that passed every test and never fired"
-date: 2026-08-31
+date: 2026-08-17
 tags: [detection-engineering, sysmon, sigma]
 ---
 
