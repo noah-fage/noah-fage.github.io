@@ -35,6 +35,11 @@ replay tests, recorded Sysmon XML runs through the whole pipeline. And Atomic Re
 Team, the real technique against real Sysmon in a VM. This is the only layer that
 caught Sysmon writing a dash instead of an empty string.
 
+The two new rules, scheduled task creation and ingress tool transfer, only have
+the first two layers so far. I still need to boot the lab VM and run them against
+real attacks before I call them done. That is the next step, and I will write it
+up when I get there.
+
 Finally, continuous integration (CI) being green means I haven't regressed. It
 doesn't mean I'm right. Those are different, and it took me a while to stop
 treating them as the same thing.
