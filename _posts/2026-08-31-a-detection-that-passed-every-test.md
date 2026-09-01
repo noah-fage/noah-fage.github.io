@@ -5,7 +5,7 @@ date: 2026-08-31
 tags: [detection-engineering, sysmon, sigma]
 ---
 
-I have been building [sigil](https://github.com/noah-fage/sigil). It's a detection
+I've been building [sigil](https://github.com/noah-fage/sigil). It's a detection
 engine that evaluates Sigma rules against live Windows Sysmon telemetry and it
 correlates the hits into attack-chain alerts. One of the four techniques it
 covers is process injection through `CreateRemoteThread` (MITRE ATT&CK T1055). The
