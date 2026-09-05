@@ -20,7 +20,7 @@ tests that push recorded telemetry through the whole engine and check what it
 flags, and two more rules, scheduled task creation and ingress tool transfer.
 Both are now validated live too. The lab VM had gone stale between rounds, so
 the new rules had nothing to fire against until I copied the files back over.
-Still on the list: Linux coverage alongside Windows.
+A possible future add-on, Linux coverage alongside Windows.
 
 [github.com/noah-fage/sigil](https://github.com/noah-fage/sigil)
 
