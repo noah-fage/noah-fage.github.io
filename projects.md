@@ -22,6 +22,13 @@ Both are now validated live too. The lab VM had gone stale between rounds, so
 the new rules had nothing to fire against until I copied the files back over.
 A possible future add-on, Linux coverage alongside Windows.
 
+Most recently I scored it against 278 recorded public attack logs and about 27
+hours of my own normal activity. It caught 5 of 34 labeled samples at first and
+21 of 34 after I fixed two telemetry format bugs. False alarms on the normal
+day went from 12 to 2. The LOLBin rule is still the weak one. The
+[write-up](/writing/scoring-sigil-against-data-i-didnt-write/) has the details
+and the numbers are in the repo.
+
 [github.com/noah-fage/sigil](https://github.com/noah-fage/sigil)
 
 ## Sentinel
