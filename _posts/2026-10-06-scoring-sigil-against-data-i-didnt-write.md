@@ -72,8 +72,7 @@ creating a thread in csrss.exe, which it does constantly and which is fine. I
 excluded that exact pair by full path, so something named dwm.exe sitting in a
 random folder still fires (there's a test for it).
 
-The other two were Claude Code starting a bash shell. That's specific to my
-machine so I left it.
+The other two are specific to my own machine, so I left them.
 
 That takes it from 12 to 2. The rules I widened raised nothing at all, and
 there were 4,519 LSASS access events in that day. I did find the dwm.exe
@@ -96,4 +95,5 @@ I still want a second day of baseline, and the LOLBin rule needs a proper pass.
 I'll write it up when I get there. The full numbers, the labels and the
 scripts are in the repo under
 [evaluation](https://github.com/noah-fage/sigil/tree/main/evaluation).
+
 
