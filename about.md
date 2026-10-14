@@ -13,7 +13,7 @@ catch attacker behavior in logs, testing them against real attack simulations in
 a home lab, and reading about how detection works at scale. I try to write up
 the parts that surprised me.
 
-**Certifications:** CompTIA Security+. CompTIA Network+ (in progress).
+**Certifications:** CompTIA Security+. CompTIA Network+.
 
 **Projects:** [sigil](/projects/) (real-time Sigma detection engine) and
 [Sentinel](/projects/) (SOC analytics dashboard).
