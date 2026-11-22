@@ -1,11 +1,12 @@
 ---
 layout: default
 title: Writing
+description: "Notes on detection engineering, evaluation, and CTF write-ups."
 ---
 
 # Writing
 
-Notes on detection engineering and CTF writeups.
+Notes on detection engineering and CTF write-ups.
 
 <ul class="post-list">
 {% for post in site.posts %}

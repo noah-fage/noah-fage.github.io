@@ -1,9 +1,10 @@
 title: Noah Fage
-description: "CS student at McGill, focused on detection engineering."
+description: "CS student at McGill focused on detection and response. Detection engineering, IoT security research, and write-ups of what I build."
 url: "https://noah-fage.github.io"
 author: Noah Fage
 linkedin: noah-fage-139885209
 github: noah-fage
+email: noah.fage@mail.mcgill.ca
 
 markdown: kramdown
 permalink: /writing/:title/
