@@ -5,48 +5,57 @@ layout: default
 <section class="hero">
   <p class="kicker">CS at McGill &middot; detection and response</p>
   <h1>Noah Fage</h1>
-  <p class="lead">I build detection tooling, run it against real attack simulations in a home lab, and write up what it missed. Lately that has also meant IoT security research at Concordia and getting into digital forensics. I'm looking for a Summer 2027 cybersecurity internship.</p>
+  <p class="lead">I'm a Computer Science student. I build detection tooling, test it against real attack simulations in a home lab, and write up what it missed. I'm looking for a Summer 2027 cybersecurity internship.</p>
   <div class="links">
     <a class="btn primary" href="{{ '/assets/Noah_Fage_Resume.pdf' | relative_url }}">Resume (PDF)</a>
     <a class="btn" href="https://github.com/{{ site.github }}">GitHub</a>
     <a class="btn" href="https://www.linkedin.com/in/{{ site.linkedin }}">LinkedIn</a>
     <a class="btn" href="mailto:{{ site.email }}">Email</a>
   </div>
-  <ul class="facts">
-    <li><strong>BA Computer Science</strong>, McGill, December 2027</li>
-    <li><strong>Security+</strong> and <strong>Network+</strong></li>
-    <li>English, French, Spanish</li>
-  </ul>
+</section>
+
+<section class="glance" aria-label="At a glance">
+  <div><span class="label">Education</span>Computer Science, McGill University<br>Expected December 2027</div>
+  <div><span class="label">Certifications</span>CompTIA Security+<br>CompTIA Network+</div>
+  <div><span class="label">Languages</span>English<br>French and Spanish</div>
 </section>
 
 <h2 class="section-label">Projects</h2>
 <div class="grid">
   <article class="card">
-    <h3><a href="{{ '/projects/' | relative_url }}#sigil">sigil</a></h3>
-    <p>A real-time detection engine. It runs Sigma rules against live Windows Sysmon telemetry and correlates related events into scored alerts mapped to MITRE ATT&amp;CK. Scored on public attack logs I didn't write, it went from 5 of 34 to 21 of 34 after I fixed two telemetry bugs, and false alarms on a normal day dropped from 12 to 2.</p>
-    <ul class="tags"><li>Python</li><li>Sigma</li><li>Sysmon</li><li>MITRE ATT&amp;CK</li><li>47 tests, CI</li></ul>
+    <h3><a href="{{ '/projects/' | relative_url }}#Sigil">Sigil</a></h3>
+    <p>A real-time detection engine. It runs Sigma rules on Windows Sysmon telemetry and maps alerts to MITRE ATT&amp;CK.</p>
+    <ul class="tags"><li>21 of 34 caught on data I didn't write</li><li>false alarms 12 to 2</li></ul>
     <div class="card-links"><a href="https://github.com/noah-fage/sigil">code</a><a href="{{ '/writing/scoring-sigil-against-data-i-didnt-write/' | relative_url }}">write-up</a></div>
   </article>
 
   <article class="card">
     <h3><a href="{{ '/projects/' | relative_url }}#sentinel">Sentinel</a></h3>
-    <p>A SOC dashboard built with FastAPI and React. Logs go to the Claude API with schema-enforced JSON output, and it returns ATT&amp;CK-mapped findings with cited evidence, a 0 to 100 risk score, and a short prediction of the attacker's next moves.</p>
-    <ul class="tags"><li>FastAPI</li><li>React</li><li>Claude API</li><li>Render, Vercel</li></ul>
-    <div class="card-links"><a href="https://sentinel-anomaly.vercel.app">live demo</a><a href="https://github.com/noah-fage/log-anomaly-detector">code</a></div>
+    <p>A SOC dashboard. It sends logs to the Claude API and returns ATT&amp;CK-mapped findings with cited evidence and a risk score.</p>
+    <ul class="tags"><li>FastAPI</li><li>React</li><li>live demo</li></ul>
+    <div class="card-links"><a href="https://sentinel-anomaly.vercel.app">demo</a><a href="https://github.com/noah-fage/log-anomaly-detector">code</a></div>
   </article>
 
   <article class="card">
     <h3><a href="{{ '/projects/' | relative_url }}#iot">IoT attack-injection testbed</a></h3>
-    <p>Research at Concordia. A configurable tool that runs port-scan and SYN-flood attacks against an emulated IoT device (IoTGoat in QEMU) while recording system calls, CPU and memory, and network traffic, so every run produces labeled data. I'm extending it to more attack types and devices.</p>
-    <ul class="tags"><li>QEMU</li><li>Bash</li><li>strace, tcpdump</li><li>IoT security</li></ul>
+    <p>Research at Concordia. A tool that runs attacks against an emulated IoT device and records what the device does, to build a labeled dataset.</p>
+    <ul class="tags"><li>QEMU</li><li>port scan</li><li>SYN flood</li></ul>
   </article>
 
   <article class="card">
-    <h3><a href="{{ '/projects/' | relative_url }}#rover">Rover UI and video pipeline</a></h3>
-    <p>McGill Robotics. I moved live rover video from a TCP WebSocket to a GStreamer WebRTC/UDP pipeline and traced a 6-issue failure chain to get stable low-latency teleoperation. I'm now the UI System Manager and lead the weekly UI meetings.</p>
-    <ul class="tags"><li>GStreamer</li><li>WebRTC</li><li>Python</li><li>TypeScript</li></ul>
+    <h3><a href="{{ '/projects/' | relative_url }}#rover">Rover video pipeline</a></h3>
+    <p>McGill Robotics. I moved live rover video from a TCP WebSocket to a WebRTC/UDP pipeline. I'm now the UI System Manager.</p>
+    <ul class="tags"><li>GStreamer</li><li>WebRTC</li><li>TypeScript</li></ul>
   </article>
 </div>
+
+<h2 class="section-label">Now</h2>
+<ul class="now">
+  <li><span class="when">Research</span>Adding more attack types and target devices to the IoT attack-injection tool.</li>
+  <li><span class="when">Learning</span>Starting digital forensics with CTF challenges. The write-ups go on this site.</li>
+  <li><span class="when">Next</span>A threat model of Sigil, covering how someone could evade or poison it.</li>
+</ul>
+<p class="stamp">Updated November 2026</p>
 
 {% if ctf_posts.size > 0 %}
 <h2 class="section-label">CTF write-ups</h2>
@@ -58,16 +67,10 @@ layout: default
 <p><a href="{{ '/ctf/' | relative_url }}">All CTF write-ups</a></p>
 {% endif %}
 
-<h2 class="section-label">Certifications</h2>
-<ul class="badges">
-  <li>CompTIA Security+<span>2026</span></li>
-  <li>CompTIA Network+<span>2026</span></li>
-</ul>
-
 <h2 class="section-label">Writing</h2>
 <ul class="post-list">
 {% for post in site.posts limit:3 %}
   <li><span class="date">{{ post.date | date: "%Y-%m-%d" }}</span> <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
-<p><a href="{{ '/writing/' | relative_url }}">All writing</a></p>
+<p><a href="{{ '/writing/' | relative_url }}">All writing</a> &middot; <a href="{{ '/links/' | relative_url }}">Links and resources</a></p>

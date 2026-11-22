@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Projects
-description: "sigil, Sentinel, an IoT attack-injection testbed, and the McGill Robotics rover video pipeline."
+description: "Sigil, Sentinel, an IoT attack-injection testbed, and the McGill Robotics rover video pipeline."
 ---
 
 <div class="prose" markdown="1">
 
 # Projects
 
-<h2 id="sigil">sigil</h2>
+<h2 id="Sigil">Sigil</h2>
 
 A real-time detection engine. It evaluates Sigma rules against live Windows
 Sysmon telemetry, correlates related events across processes into scored alerts
@@ -16,7 +16,7 @@ mapped to MITRE ATT&CK, and exports ATT&CK Navigator layers. It covers six
 techniques, all validated in an isolated lab against live Atomic Red Team attack
 simulations.
 
-![sigil flagging an LSASS credential-dumping attempt in the lab, tagged to ATT&CK T1003.001, next to a running Atomic Red Team test](/assets/img/sigil-lsass-detection.png)
+![Sigil flagging an LSASS credential-dumping attempt in the lab, tagged to ATT&CK T1003.001, next to a running Atomic Red Team test](/assets/img/sigil-lsass-detection.png)
 
 Since then I added a CI pipeline that runs the tests on every push, replay
 tests that push recorded telemetry through the whole engine and check what it

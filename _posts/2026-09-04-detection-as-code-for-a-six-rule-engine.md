@@ -5,14 +5,14 @@ date: 2026-09-04
 tags: [detection-engineering, testing, ci, sigma]
 ---
 
-Last post, I said the fixtures I wrote for [sigil](https://github.com/noah-fage/sigil)
+Last post, I said the fixtures I wrote for [Sigil](https://github.com/noah-fage/sigil)
 were no longer the thing I trusted, which is still true. That's not a reason to
 delete them though. This is about the test layers around the rules, and the one
 thing none of them do.
 
 ## The setup
 
-sigil covers six ATT&CK techniques now, not four. Every new rule touches shared
+Sigil covers six ATT&CK techniques now, not four. Every new rule touches shared
 code, the loader, the correlation engine, sometimes the event schema. A change
 that fixes rule six can break rule two, and a broken detection rule doesn't
 throw an error. It just goes quiet.
@@ -33,7 +33,7 @@ all three layers too. I booted the lab VM and ran them against real Atomic Red
 Team tests. Both fired. Turned out the VM was still running the old four-rule
 set, so the rules had nothing to fire against until I copied the two new files
 over myself. I also hit a snag exporting the Sysmon log for replay. wevtutil
-wrote UTF-16 on that machine, sigil's replay path reads UTF-8, so the export
+wrote UTF-16 on that machine, Sigil's replay path reads UTF-8, so the export
 parsed into nothing until I forced the encoding.
 
 While I was in there I caught something else too. The process injection rule and

@@ -5,7 +5,7 @@ date: 2026-08-17
 tags: [detection-engineering, sysmon, sigma]
 ---
 
-I've been building [sigil](https://github.com/noah-fage/sigil). It's a detection
+I've been building [Sigil](https://github.com/noah-fage/sigil). It's a detection
 engine that evaluates Sigma rules against live Windows Sysmon telemetry and it
 correlates the hits into attack-chain alerts. One of the four techniques it
 covers is process injection through `CreateRemoteThread` (MITRE ATT&CK T1055). The
@@ -68,6 +68,6 @@ They don't tell you whether what you think is true. For anything that parses
 telemetry, the ground truth is the telemetry, and the way to get it is to run
 the real technique against a real sensor and read the output byte for byte.
 
-sigil now validates every rule against a live Atomic Red Team run in an isolated
+Sigil now validates every rule against a live Atomic Red Team run in an isolated
 VM, not just against fixtures I wrote. The fixtures are still there for fast
 feedback. They are just no longer the thing I trust.

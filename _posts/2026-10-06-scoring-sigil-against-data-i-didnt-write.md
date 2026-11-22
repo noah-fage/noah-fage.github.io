@@ -1,11 +1,11 @@
 ﻿---
 layout: post
-title: "Scoring sigil against data I didn't write"
+title: "Scoring Sigil against data I didn't write"
 date: 2026-10-06
 tags: [detection-engineering, evaluation, sigma, false-positives]
 ---
 
-Every test in [sigil](https://github.com/noah-fage/sigil) passes. Every rule
+Every test in [Sigil](https://github.com/noah-fage/sigil) passes. Every rule
 fires in my lab. That tells me less than it sounds like, since I wrote the
 rules, the tests, and the attacks I ran against them. So I went and found data
 I didn't write.
@@ -17,12 +17,12 @@ attack techniques. 278 files, 3,241 Sysmon events. I sorted the files by
 technique from their folder and file names, and I wrote the sorting rule down
 before I looked at a single result. A file only counts if it has the kind of
 Sysmon event that technique's rule actually reads. A lot of the samples are
-Security log events, which sigil never sees, so those don't count as misses.
+Security log events, which Sigil never sees, so those don't count as misses.
 
 I split the files in half. One half to tune on, one half I wouldn't touch.
 
 For false alarms I needed normal activity, so I ran Sysmon on my own PC with
-sigil's config for about 27 hours and just used the computer. Coding, browsing,
+Sigil's config for about 27 hours and just used the computer. Coding, browsing,
 class stuff. 14,235 events.
 
 ## It missed most of it

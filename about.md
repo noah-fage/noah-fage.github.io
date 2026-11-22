@@ -8,7 +8,7 @@ description: "Computer Science at McGill, detection and response, IoT security r
 
 # About
 
-I'm a Computer Science student at McGill (BA, expected December 2027), with a
+I'm a Computer Science student at McGill (expected December 2027), with a
 minor in Music Technology. I grew up speaking English, French and Spanish.
 
 Most of my building time goes to detection engineering. I write rules that catch
