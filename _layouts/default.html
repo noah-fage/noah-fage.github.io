@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
-  <meta name="theme-color" content="#f3eee4">
 
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
@@ -21,34 +20,28 @@
 <body>
   <a class="skip" href="#content">Skip to content</a>
   {% assign ctf_posts = site.tags.ctf %}
-  <div class="page">
-    <aside class="rail">
-      <a class="name" href="{{ '/' | relative_url }}">Noah Fage</a>
-      <p class="role">Computer Science at McGill. Detection and response.</p>
-      <nav aria-label="Main">
-        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="current"{% endif %}>home</a>
-        <a href="{{ '/projects/' | relative_url }}"{% if page.url == '/projects/' %} class="current"{% endif %}>projects</a>
-        {% if ctf_posts.size > 0 %}<a href="{{ '/ctf/' | relative_url }}"{% if page.url == '/ctf/' %} class="current"{% endif %}>ctf</a>{% endif %}
-        <a href="{{ '/writing/' | relative_url }}"{% if page.url == '/writing/' %} class="current"{% endif %}>writing</a>
-        <a href="{{ '/links/' | relative_url }}"{% if page.url == '/links/' %} class="current"{% endif %}>links</a>
-        <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} class="current"{% endif %}>about</a>
-      </nav>
-      <div class="contact">
-        <a href="{{ '/assets/Noah_Fage_Resume.pdf' | relative_url }}">Resume (PDF)</a>
-        <a href="https://github.com/{{ site.github }}">GitHub</a>
-        <a href="https://www.linkedin.com/in/{{ site.linkedin }}">LinkedIn</a>
-        <a href="mailto:{{ site.email }}">Email</a>
-      </div>
-      <p class="facts">Expected December 2027<br>Security+, Network+<br>English, French, Spanish</p>
-    </aside>
+  <header>
+    <a class="site-title" href="{{ '/' | relative_url }}">Noah Fage</a>
+    <nav aria-label="Main">
+      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="current"{% endif %}>home</a>
+      <a href="{{ '/projects/' | relative_url }}"{% if page.url == '/projects/' %} class="current"{% endif %}>projects</a>
+      {% if ctf_posts.size > 0 %}<a href="{{ '/ctf/' | relative_url }}"{% if page.url == '/ctf/' %} class="current"{% endif %}>ctf</a>{% endif %}
+      <a href="{{ '/writing/' | relative_url }}"{% if page.url == '/writing/' %} class="current"{% endif %}>writing</a>
+      <a href="{{ '/links/' | relative_url }}"{% if page.url == '/links/' %} class="current"{% endif %}>links</a>
+      <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} class="current"{% endif %}>about</a>
+      <a href="{{ '/assets/Noah_Fage_Resume.pdf' | relative_url }}">resume</a>
+    </nav>
+  </header>
 
-    <main id="content">
-      {{ content }}
-      <div class="foot">
-        <span>Noah Fage &middot; Montreal and New York</span>
-        <span><a href="{{ '/feed.xml' | relative_url }}">rss</a></span>
-      </div>
-    </main>
-  </div>
+  <main id="content">
+    {{ content }}
+  </main>
+
+  <footer>
+    <a href="https://github.com/{{ site.github }}">github</a>
+    <a href="https://www.linkedin.com/in/{{ site.linkedin }}">linkedin</a>
+    <a href="mailto:{{ site.email }}">email</a>
+    <a href="{{ '/feed.xml' | relative_url }}">rss</a>
+  </footer>
 </body>
 </html>

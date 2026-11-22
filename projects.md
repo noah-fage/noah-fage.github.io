@@ -4,11 +4,9 @@ title: Projects
 description: "Sigil, Sentinel, an IoT attack-injection testbed, and the McGill Robotics rover video pipeline."
 ---
 
-<div class="prose" markdown="1">
-
 # Projects
 
-<h2 id="Sigil">Sigil</h2>
+## Sigil {#sigil}
 
 A real-time detection engine. It evaluates Sigma rules against live Windows
 Sysmon telemetry, correlates related events across processes into scored alerts
@@ -34,7 +32,7 @@ and the numbers are in the repo.
 
 [github.com/noah-fage/sigil](https://github.com/noah-fage/sigil)
 
-<h2 id="sentinel">Sentinel</h2>
+## Sentinel {#sentinel}
 
 A SOC analytics dashboard built with FastAPI and React. Logs go to the Claude
 API in a single call with extended thinking and schema-enforced JSON output. It
@@ -43,10 +41,10 @@ mapped to MITRE ATT&CK, each with cited evidence and a 0 to 100 risk score.
 It then projects the attacker's likely next moves and countermeasures. The
 backend is on Render and the frontend is on Vercel.
 
-[sentinel-anomaly.vercel.app](https://sentinel-anomaly.vercel.app) &middot;
+[sentinel-anomaly.vercel.app](https://sentinel-anomaly.vercel.app) and
 [github.com/noah-fage/log-anomaly-detector](https://github.com/noah-fage/log-anomaly-detector)
 
-<h2 id="iot">IoT attack-injection testbed</h2>
+## IoT attack-injection testbed {#iot}
 
 I'm a student researcher in Prof. Carol Fung's group at Concordia. The goal is
 a labeled dataset of attacks against IoT devices, since not much of it exists.
@@ -58,7 +56,7 @@ devices.
 
 The results are unpublished, so they stay off this page.
 
-<h2 id="rover">Rover UI and video pipeline</h2>
+## Rover video pipeline {#rover}
 
 On the McGill Robotics rover team I moved live camera video from a TCP WebSocket
 to a GStreamer WebRTC/UDP pipeline for low-latency teleoperation. Getting it
@@ -68,5 +66,3 @@ GPS navigation page for competition and set up the interface so it can run on
 several computers at once. I've been on the team since January and was recently
 made the UI System Manager, so now I also run the weekly UI meetings and connect
 people across divisions.
-
-</div>
