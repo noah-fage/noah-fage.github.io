@@ -143,3 +143,7 @@ th { color: var(--heading); }
 
 ul.plain { padding-left: 1.1rem; }
 ul.plain li { margin: 0.5rem 0; }
+
+/* CTF write-ups page */
+h2.ctf-title { color: var(--accent); font-size: 1.4rem; margin-bottom: 0.6rem; }
+h2.ctf-title .ctf-meta { color: var(--muted); font-size: 1rem; font-weight: normal; }

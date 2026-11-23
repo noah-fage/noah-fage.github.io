@@ -6,7 +6,7 @@ description: "Notes on detection engineering, evaluation, and CTF write-ups."
 
 # Writing
 
-Notes on detection engineering and CTF write-ups.
+Notes on detection engineering. My [CTF write-ups](/ctf/) have their own page.
 
 <ul class="post-list">
 {% for post in site.posts %}
