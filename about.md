@@ -35,7 +35,8 @@ When I'm not doing that I lift weights and play keys in
 Python, C, Bash, PowerShell, FastAPI, Git, GitHub Actions, pytest. Sigma,
 Sysmon, MITRE ATT&CK, Atomic Red Team. TCP/IP, the OSI model, DNS, Wireshark.
 
-CompTIA Security+. CompTIA Network+.
+CompTIA [Security+](/assets/comptia-security-plus.pdf) and
+[Network+](/assets/comptia-network-plus.pdf).
 
 ## Contact
 

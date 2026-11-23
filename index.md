@@ -18,6 +18,15 @@ I'm looking for a Summer 2027 cybersecurity internship.
 <a href="mailto:noah.fage@mail.mcgill.ca">Email</a>
 </p>
 
+## Certifications
+
+- CompTIA Security+ (SY0-701), July 2026, valid through July 2029.
+  [Certificate (PDF)](/assets/comptia-security-plus.pdf)
+- CompTIA Network+ (N10-009), October 2026, valid through October 2029.
+  [Certificate (PDF)](/assets/comptia-network-plus.pdf)
+
+Both can be checked at [verify.comptia.org](https://verify.comptia.org).
+
 ## Projects
 
 - [Sigil](/projects/#sigil), a real-time detection engine for Windows Sysmon
