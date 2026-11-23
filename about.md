@@ -11,10 +11,10 @@ in Music Technology. I grew up speaking English, French and Spanish.
 
 Most of my building time goes to detection engineering. I write rules that catch
 attacker behavior in logs, test them against real attack simulations in a home
-lab, and write up the parts that surprised me. I'm also getting into digital
-forensics, and I'm starting with CTF challenges and posting the write-ups here.
+lab, and write up the parts that surprised me. I'm also into digital
+forensics, and I do CTF challenges and post the write-ups here.
 
-When I'm not doing that I lift weights and play keys in
+When I'm not doing that I lift weights, play chess, and play keys in
 [Blue Moon Brothers](https://open.spotify.com/search/Blue%20Moon%20Brothers).
 
 ## Experience
