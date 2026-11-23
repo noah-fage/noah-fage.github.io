@@ -38,6 +38,7 @@ Both can be checked at [verify.comptia.org](https://verify.comptia.org).
 ## Recent writing
 
 <ul class="post-list">
+  <li><a href="{{ '/ctf/' | relative_url }}">CTF write-ups</a></li>
 {% for post in site.posts limit:5 %}
   <li><span class="date">{{ post.date | date: "%Y-%m-%d" }}</span> <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
 {% endfor %}
